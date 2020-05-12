@@ -1,0 +1,2 @@
+rootProject.name='Soft3_101'
+include ':app'
