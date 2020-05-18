@@ -22,32 +22,53 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
+    ListView listView;
+            List<String> mList;
 
-    ListView list;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+@Override
+protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.one_1);
+        setContentView(R.layout.activity_main);
 
-        list = (ListView)findViewById(R.id.list);
 
-        List<String> data = new ArrayList<>();
+        listView = (ListView)findViewById(R.id.list_view);
+       String strs[] = {
+               getString(R.string.first),
+               getString(R.string.second),
+               getString(R.string.third),
+               getString(R.string.fourth),
+               getString(R.string.dong)
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
+       };
 
-        data.add("1호선");
-        data.add("2호선");
-        data.add("3호선");
-        data.add("4호선");
-        data.add("부산 김해선");
-        data.add("동해선");
+        mList = Arrays.asList(strs);
 
-        adapter.notifyDataSetInvalidated();;
+        listView.setAdapter(new MyCustomAdapter());
 
+        }
+
+
+/*** Custom Adapter ***/
+private class MyCustomAdapter extends ArrayAdapter<String>
+{
+
+    public MyCustomAdapter()
+    {
+        super(MainActivity.this,R.layout.item_layout,mList);
     }
 
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent)
+    {
+        if(convertView==null) convertView = getLayoutInflater().inflate(R.layout.item_layout,parent,false);
+
+        TextView textViewAtCustomLayout = (TextView)convertView.findViewById(R.id.text_view_at_custom_layout);
+        textViewAtCustomLayout.setText(mList.get(position));
+
+        return convertView;
+    }
+}
 
 }
