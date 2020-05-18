@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="second_1">양산역</string>
+     <string name="second_2">남양산역</string>
+     <string name="second_3">부산대양산캠퍼스역</string>
+     <string name="second_4">중산역</string>
+     <string name="second_5">호포역</string>
+     <string name="second_6">금곡역</string>
+     <string name="second_7">동원역</string>
+     <string name="second_8">율리역</string>
+     <string name="second_9">화명역</string>
+    <string name="second_10">수정역</string>
+    <string name="second_11">덕천역</string>
+    <string name="second_12">구명역</string>
+    <string name="second_13">구남역</string>
+    <string name="second_14">모라역</string>
+    <string name="second_15">모덕역</string>
+    <string name="second_16">덕포역</string>
+    <string name="second_17">감전역</string>
+    <string name="second_18">주례역</string>
+    <string name="second_19">냉정역</string>
+    <string name="second_20">개금역</string>
+    <string name="second_21">동의대역</string>
+    <string name="second_22">가야역</string>
+    <string name="second_23">부암역</string>
+    <string name="second_24">서면역</string>
+    <string name="second_25">전포역</string>
+    <string name="second_26">국제금융센터.부산은행역</string>
+    <string name="second_27">문현역</string>
+    <string name="second_28">지게골</string>
+    <string name="second_29">못골역</string>
+    <string name="second_30">대연역</string>
+    <string name="second_31">경성대.부경대역</string>
+    <string name="second_32">남천역</string>
+    <string name="second_33">금련산역</string>
+    <string name="second_34">광안역</string>
+    <string name="second_35">수영역</string>
+    <string name="second_36">민락역</string>
+    <string name="second_37">센텀시티역</string>
+    <string name="second_38">벡스코역</string>
+    <string name="second_39">동백역</string>
+    <string name="second_40">해운대역</string>
+    <string name="second_41">중동역</string>
+    <string name="second_42">장산역</string>
+
+
+</resources>
