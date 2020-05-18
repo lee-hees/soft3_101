@@ -9,10 +9,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class four extends AppCompatActivity {
+public class item extends AppCompatActivity {
     ListView listView;
     List<String> mList;
 
@@ -20,32 +21,15 @@ public class four extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.four);
+        setContentView(R.layout.five);
 
 
         listView = (ListView) findViewById(R.id.list_view);
-
-        String[] strs = {
-
-                getString(R.string.fourth_1),
-                getString(R.string.fourth_2),
-                getString(R.string.fourth_3),
-                getString(R.string.fourth_4),
-                getString(R.string.fourth_5),
-                getString(R.string.fourth_6),
-                getString(R.string.fourth_7),
-                getString(R.string.fourth_8),
-                getString(R.string.fourth_9),
-                getString(R.string.fourth_10),
-                getString(R.string.fourth_11),
-                getString(R.string.fourth_12),
-                getString(R.string.fourth_13),
-                getString(R.string.fourth_14)
-        };
+        String[] strs = {"미남역", "동래역", "수안역", "낙민역", "충렬사역", "명장역", "서동역", "금사역", "반여농산물시장역", "석대역", "영산대역", "동부산대학역", "고촌역", "안평역"};
 
         mList = Arrays.asList(strs);
 
-        listView.setAdapter(new four.MyCustomAdapter());
+        listView.setAdapter(new MyCustomAdapter());
 
     }
 
@@ -54,7 +38,7 @@ public class four extends AppCompatActivity {
     private class MyCustomAdapter extends ArrayAdapter<String> {
 
         public MyCustomAdapter() {
-            super(four.this, R.layout.item_layout, mList);
+            super(item.this, R.layout.item_layout, mList);
         }
 
         @Override

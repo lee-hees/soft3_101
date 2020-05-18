@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,11 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
-            android:scaleType="fitStart"
-            />
+            android:scaleType="fitStart" />
 
         <TextView
-            android:id="@+id/home7"
+            android:id="@+id/home3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -28,34 +28,17 @@
             android:textSize="50sp" />
 
         <ImageView
-            android:layout_weight="1.5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:layout_weight="1.5" />
 
     </LinearLayout>
 
 
-    <LinearLayout
+    <ListView
+        android:id="@+id/list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.5"/>
-        <ListView
+        android:layout_height="wrap_content">
 
-            android:dividerHeight="0px"
-            android:divider="#ffffff"
-            android:layout_weight="1"
-            android:id="@+id/list7"
-            android:foregroundGravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="2dp" />
-    </LinearLayout>
+    </ListView>
 </LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="first">1호선</string>
+    <string name="second">2호선</string>
+    <string name="third">3호선</string>
+    <string name="fourth">4호선</string>
+    <string name="dong">동해선</string>
+
+</resources>

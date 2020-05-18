@@ -4,37 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1.5"
-        android:scaleType="fitStart"
-        />
-
-    <TextView
-        android:id="@+id/home4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="지하철"
-        android:textAlignment="center"
-        android:textSize="50sp" />
-
-    <ImageView
-        android:layout_weight="1.5"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
-</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,9 +15,33 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
-            android:scaleType="fitStart"
-            />
+            android:layout_weight="1.5" />
+
+        <TextView
+            android:id="@+id/home4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="지하철"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5" />
 
         <TextView
             android:id="@+id/home5"
@@ -57,35 +53,35 @@
             android:textSize="40sp" />
 
         <ImageView
-            android:layout_weight="1.5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            android:layout_weight="1.5" />
     </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    >
-    <Button
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:text="왼쪽"
-        android:textAlignment="center"
-        android:layout_weight="1"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="왼쪽"
+            android:textAlignment="center"
+            android:textSize="40sp" />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textAlignment="center"
-        android:text="오른쪽"
-        android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="오른쪽"
+            android:textAlignment="center"
+            android:textSize="40sp" />
 
 
-</LinearLayout>
+    </LinearLayout>
 
 
 </LinearLayout>

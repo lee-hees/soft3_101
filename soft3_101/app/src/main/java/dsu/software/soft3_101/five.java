@@ -1,45 +1,73 @@
 package dsu.software.soft3_101;
 
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class five extends AppCompatActivity {
 
-    private ListView list;
+public class five extends AppCompatActivity {
+    ListView listView;
+    List<String> mList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.five);
 
-        list = (ListView)findViewById(R.id.list);
 
-        List<String> data = new ArrayList<>();
+        listView = (ListView) findViewById(R.id.list_view);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
+        String[] strs = {
 
-        data.add("부전(동해선)역");
-        data.add("거제해맞이역");
-        data.add("거제역");
-        data.add("교대역");
-        data.add("동래(동해선)역");
-        data.add("안락역");
-        data.add("부산원동역");
-        data.add("재송역");
-        data.add("센텀역");
-        data.add("벡스코역");
-        data.add("신해운대역");
-        data.add("송정역");
-        data.add("오시리아역");
-        data.add("기장역");
-        data.add("일광역");
-        adapter.notifyDataSetInvalidated();;
+                getString(R.string.dong_1),
+                getString(R.string.dong_2),
+                getString(R.string.dong_3),
+                getString(R.string.dong_4),
+                getString(R.string.dong_5),
+                getString(R.string.dong_6),
+                getString(R.string.dong_7),
+                getString(R.string.dong_8),
+                getString(R.string.dong_9),
+                getString(R.string.dong_10),
+                getString(R.string.dong_11),
+                getString(R.string.dong_12),
+                getString(R.string.dong_13),
+                getString(R.string.dong_14)
+        };
+
+        mList = Arrays.asList(strs);
+
+        listView.setAdapter(new five.MyCustomAdapter());
+
+    }
+
+
+    /*** Custom Adapter ***/
+    private class MyCustomAdapter extends ArrayAdapter<String> {
+
+        public MyCustomAdapter() {
+            super(five.this, R.layout.item_layout, mList);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
+
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
+            textViewAtCustomLayout.setText(mList.get(position));
+
+            return convertView;
+        }
     }
 }

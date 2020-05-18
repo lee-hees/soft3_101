@@ -1,72 +1,102 @@
 package dsu.software.soft3_101;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
+@SuppressLint("Registered")
 public class two extends AppCompatActivity {
+    ListView listView;
+    List<String> mList;
 
-    private ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.two);
 
-        list = (ListView)findViewById(R.id.list);
 
-        List<String> data = new ArrayList<>();
+        listView = (ListView) findViewById(R.id.list_view);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
+        String[] strs = {
 
-        data.add("양산역");
-        data.add("남양산역");
-        data.add("부산대양산캠퍼스역");
-        data.add("중산역");
-        data.add("호포역");
-        data.add("금곡역");
-        data.add("동원역");
-        data.add("율리역");
-        data.add("화명역");
-        data.add("수정역");
-        data.add("덕천역");
-        data.add("구명역");
-        data.add("구남역");
-        data.add("모라역");
-        data.add("모덕역");
-        data.add("덕포역");
-        data.add("감전역");
-        data.add("주례역");
-        data.add("냉정역");
-        data.add("개금역");
-        data.add("동의대역");
-        data.add("가야역");
-        data.add("부암역");
-        data.add("서면역");
-        data.add("전포역");
-        data.add("국제금융센터.부산은행역");
-        data.add("문현역");
-        data.add("지게골역");
-        data.add("못골역");
-        data.add("대연역");
-        data.add("경성대.부경대역");
-        data.add("남천역");
-        data.add("금련산역");
-        data.add("광안역");
-        data.add("수영역");
-        data.add("민락역");
-        data.add("센텀시티역");
-        data.add("벡스코역");
-        data.add("동백역");
-        data.add("해운대역");
-        data.add("중동역");
-        data.add("장산역");
-        adapter.notifyDataSetInvalidated();;
+                getString(R.string.second_1),
+                getString(R.string.second_2),
+                getString(R.string.second_3),
+                getString(R.string.second_4),
+                getString(R.string.second_5),
+                getString(R.string.second_6),
+                getString(R.string.second_7),
+                getString(R.string.second_8),
+                getString(R.string.second_9),
+                getString(R.string.second_10),
+                getString(R.string.second_11),
+                getString(R.string.second_12),
+                getString(R.string.second_13),
+                getString(R.string.second_14),
+                getString(R.string.second_15),
+                getString(R.string.second_16),
+                getString(R.string.second_17),
+                getString(R.string.second_18),
+                getString(R.string.second_19),
+                getString(R.string.second_20),
+                getString(R.string.second_21),
+                getString(R.string.second_22),
+                getString(R.string.second_23),
+                getString(R.string.second_24),
+                getString(R.string.second_25),
+                getString(R.string.second_26),
+                getString(R.string.second_27),
+                getString(R.string.second_28),
+                getString(R.string.second_29),
+                getString(R.string.second_30),
+                getString(R.string.second_31),
+                getString(R.string.second_32),
+                getString(R.string.second_33),
+                getString(R.string.second_34),
+                getString(R.string.second_35),
+                getString(R.string.second_36),
+                getString(R.string.second_37),
+                getString(R.string.second_38),
+                getString(R.string.second_39),
+                getString(R.string.second_40),
+                getString(R.string.second_41),
+                getString(R.string.second_42),
+
+        };
+
+        mList = Arrays.asList(strs);
+
+        listView.setAdapter(new two.MyCustomAdapter());
+
+    }
+
+
+    /*** Custom Adapter ***/
+    private class MyCustomAdapter extends ArrayAdapter<String> {
+
+        public MyCustomAdapter() {
+            super(two.this, R.layout.item_layout, mList);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
+
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
+            textViewAtCustomLayout.setText(mList.get(position));
+
+            return convertView;
+        }
     }
 }

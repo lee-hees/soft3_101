@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dong_1">부전(동해선)역</string>
+    <string name="dong_2">거제해맞이역</string>
+    <string name="dong_3">거제역</string>
+    <string name="dong_4">교대역</string>
+    <string name="dong_5">동래(동해선)역</string>
+    <string name="dong_6">안락역</string>
+    <string name="dong_7">부산원동역</string>
+    <string name="dong_8">재송역</string>
+    <string name="dong_9">센텀역</string>
+    <string name="dong_10">벡스코</string>
+    <string name="dong_11">신해운대역</string>
+    <string name="dong_12">송정역</string>
+    <string name="dong_13">오시리아역</string>
+    <string name="dong_14">기장역</string>
+    <string name="dong_15">일광역</string>
+
+</resources>

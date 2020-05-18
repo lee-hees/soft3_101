@@ -1,70 +1,101 @@
 package dsu.software.soft3_101;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
+@SuppressLint("Registered")
 public class one extends AppCompatActivity {
+    ListView listView;
+    List<String> mList;
 
-    private ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.one);
 
-        list = (ListView)findViewById(R.id.list);
 
-        List<String> data = new ArrayList<>();
+        listView = (ListView) findViewById(R.id.list_view);
+        String[] strs = {
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
+                getString(R.string.first_1),
+                getString(R.string.first_2),
+                getString(R.string.first_3),
+                getString(R.string.first_4),
+                getString(R.string.first_5),
+                getString(R.string.first_6),
+                getString(R.string.first_7),
+                getString(R.string.first_8),
+                getString(R.string.first_9),
+                getString(R.string.first_10),
+                getString(R.string.first_11),
+                getString(R.string.first_12),
+                getString(R.string.first_13),
+                getString(R.string.first_14),
+                getString(R.string.first_15),
+                getString(R.string.first_16),
+                getString(R.string.first_17),
+                getString(R.string.first_18),
+                getString(R.string.first_19),
+                getString(R.string.first_20),
+                getString(R.string.first_21),
+                getString(R.string.first_22),
+                getString(R.string.first_23),
+                getString(R.string.first_24),
+                getString(R.string.first_25),
+                getString(R.string.first_26),
+                getString(R.string.first_27),
+                getString(R.string.first_28),
+                getString(R.string.first_29),
+                getString(R.string.first_30),
+                getString(R.string.first_31),
+                getString(R.string.first_32),
+                getString(R.string.first_33),
+                getString(R.string.first_34),
+                getString(R.string.first_35),
+                getString(R.string.first_36),
+                getString(R.string.first_37),
+                getString(R.string.first_38),
+                getString(R.string.first_39),
+                getString(R.string.first_40)
 
-        data.add("다대포해수욕장역");
-        data.add("다디포항역");
-        data.add("낫개역");
-        data.add("신장림역");
-        data.add("장림역");
-        data.add("동매역");
-        data.add("신평역");
-        data.add("하단역");
-        data.add("당리역");
-        data.add("사하역");
-        data.add("괴정역");
-        data.add("대티역");
-        data.add("서대신역");
-        data.add("동대신역");
-        data.add("토성역");
-        data.add("자갈치역");
-        data.add("남포역");
-        data.add("중앙역");
-        data.add("부산역");
-        data.add("초량역");
-        data.add("부산진역");
-        data.add("좌천역");
-        data.add("범일역");
-        data.add("범내골역");
-        data.add("서면역");
-        data.add("부전역");
-        data.add("양정역");
-        data.add("시청역");
-        data.add("연산역");
-        data.add("교대역");
-        data.add("동래역");
-        data.add("명륜역");
-        data.add("온천장역");
-        data.add("부산대역");
-        data.add("장전역");
-        data.add("구서역");
-        data.add("두실역");
-        data.add("남산역");
-        data.add("범어사역");
-        data.add("노포역");
-        adapter.notifyDataSetInvalidated();;
+
+        };
+
+        mList = Arrays.asList(strs);
+
+        listView.setAdapter(new one.MyCustomAdapter());
+
+    }
+
+
+    /*** Custom Adapter ***/
+    private class MyCustomAdapter extends ArrayAdapter<String> {
+
+        public MyCustomAdapter() {
+            super(one.this, R.layout.item_layout, mList);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
+
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
+            textViewAtCustomLayout.setText(mList.get(position));
+
+            return convertView;
+        }
     }
 }
