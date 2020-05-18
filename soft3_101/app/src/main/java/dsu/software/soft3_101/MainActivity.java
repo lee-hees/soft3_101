@@ -1,52 +1,65 @@
-package dsu.software.subwaybusan;
+package dsu.software.soft3_101;
+
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.*;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.os.Bundle;
-import android.view.ContextMenu;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView list;
+    ListView listView;
+    List<String> mList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.one_1);
+        setContentView(R.layout.activity_main);
 
-        list = (ListView)findViewById(R.id.list);
+        listView = (ListView)findViewById(R.id.list_view);
+        String strs[] = {
+                getString(R.string.first),
+                getString(R.string.second),
+                getString(R.string.third),
+                getString(R.string.fourth),
+                getString(R.string.dong)
+        };
 
-        List<String> data = new ArrayList<>();
+        mList = Arrays.asList(strs);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, data);
-        list.setAdapter(adapter);
+        listView.setAdapter(new MyCustomAdapter());
+//        data.add("1호선");
+//        data.add("2호선");
+//        data.add("3호선");
+//        data.add("4호선");
+//        data.add("부산 김해선");
+//        data.add("동해선");
 
-        data.add("1호선");
-        data.add("2호선");
-        data.add("3호선");
-        data.add("4호선");
-        data.add("부산 김해선");
-        data.add("동해선");
+//        adapter.notifyDataSetInvalidated();
 
-        adapter.notifyDataSetInvalidated();;
+    }
 
+    private class MyCustomAdapter extends ArrayAdapter<String>
+    {
+
+        public MyCustomAdapter()
+        {
+            super(MainActivity.this,R.layout.item_layout,mList);
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent)
+        {
+            if(convertView==null) convertView = getLayoutInflater().inflate(R.layout.item_layout,parent,false);
+
+            TextView textViewAtCustomLayout = (TextView)convertView.findViewById(R.id.text_view_at_custom_layout);
+            textViewAtCustomLayout.setText(mList.get(position));
+
+            return convertView;
+        }
     }
 
 

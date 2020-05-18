@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   Author    : Adriano Alves
+   Date      :
+   Package   : layout
+   Project   :
+   File      : item_layout Layout File Landscape
+   Objective :
+
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:padding="10sp"
+        android:text="Large Text"
+        android:id="@+id/text_view_at_custom_layout"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

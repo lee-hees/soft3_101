@@ -1,4 +1,4 @@
-package dsu.software.subwaybusan;
+package dsu.software.soft3_101;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
