@@ -12,11 +12,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1.5"-->
+        <!--            android:scaleType="fitStart"-->
+        <!--            android:src="@drawable/left2" />-->
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
-            android:scaleType="fitStart" />
+            android:gravity="center"
+            android:text='&lt;'
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/home3"
@@ -27,10 +36,20 @@
             android:textAlignment="center"
             android:textSize="50sp" />
 
-        <ImageView
+        <!--        <ImageView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1.5"-->
+        <!--            android:src="@drawable/right2" />-->
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.5" />
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text='&gt;'
+            android:textSize="40sp" />
 
     </LinearLayout>
 

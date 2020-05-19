@@ -25,6 +25,7 @@ public class third extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.third_layout);
+        final Stations string = new Stations();
 
         list_itemArrayList = new ArrayList<ListViewItem>();
         listView = (ListView) findViewById(R.id.list_view);
@@ -53,8 +54,79 @@ public class third extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent todetail = new Intent(getApplicationContext(), MainActivity.class);
-                // 임시로 홈화면 이동 --> 세부 정보 페이지로 이동으로 수정할 것
+                detail.whichstation = 2; // 3호선 확인용
+                if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_1))) {
+                    detail.num = 0;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_2))) {
+                    detail.num = 1;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_3))) {
+                    detail.num = 2;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_4))) {
+                    detail.num = 3;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_5))) {
+                    detail.num = 4;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_6))) {
+                    detail.num = 5;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_7))) {
+                    detail.num = 6;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_8))) {
+                    detail.num = 7;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_9))) {
+                    detail.num = 8;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_10))) {
+                    detail.num = 9;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_11))) {
+                    detail.num = 10;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_12))) {
+                    detail.num = 11;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_13))) {
+                    detail.num = 12;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_14))) {
+                    detail.num = 13;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_15))) {
+                    detail.num = 14;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_16))) {
+                    detail.num = 15;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third_17))) {
+                    detail.num = 16;
+                    MainActivity.name = getString(string.FS[detail.whichstation][detail.num]);
+
+                }
+
+                // 항상 같은 액티비티 사용
+                Intent todetail = new Intent(getApplicationContext(), detail.class);
                 startActivity(todetail);
             }
         });

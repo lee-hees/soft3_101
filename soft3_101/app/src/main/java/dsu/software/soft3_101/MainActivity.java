@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     ListviewAdapter myListAdapter;
     ArrayList<ListViewItem> list_itemArrayList;
 
+    static String name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent tofourth = new Intent(getApplicationContext(), fourth.class);
                     startActivity(tofourth);
                 }
-                else{
-                    Toast.makeText(MainActivity.this, "동해선", Toast.LENGTH_SHORT).show();
+                else if(list_itemArrayList.get(position).getContent().equals(getString(R.string.dong))){
                     Intent todong = new Intent(getApplicationContext(), dong.class);
                     startActivity(todong);
                 }
