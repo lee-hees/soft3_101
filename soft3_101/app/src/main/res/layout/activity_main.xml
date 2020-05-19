@@ -12,23 +12,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <!--        <ImageView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1.5"-->
-        <!--            android:scaleType="fitStart"-->
-        <!--            android:src="@drawable/left2" />-->
-
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text='&lt;'
-            android:textSize="40sp" />
-
-        <TextView
-            android:id="@+id/home3"
+            android:id="@+id/home"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -36,20 +21,6 @@
             android:textAlignment="center"
             android:textSize="50sp" />
 
-        <!--        <ImageView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent"-->
-        <!--            android:layout_weight="1.5"-->
-        <!--            android:src="@drawable/right2" />-->
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1.5"
-            android:gravity="center"
-            android:text='&gt;'
-            android:textSize="40sp" />
 
     </LinearLayout>
 

@@ -15,8 +15,8 @@
         <activity android:name=".fourth"/>
         <activity android:name=".dong"/>
         <activity android:name=".detail"/>
-        <activity android:name=".MainActivity">
-            <intent-filter>
+        <activity android:name=".MainActivity" android:launchMode="singleInstance">
+            <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

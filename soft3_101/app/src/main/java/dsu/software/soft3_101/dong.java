@@ -28,6 +28,15 @@ public class dong extends AppCompatActivity {
         setContentView(R.layout.dong_layout);
         final Stations string = new Stations();
 
+        TextView home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(home);
+            }
+        });
+
         list_itemArrayList = new ArrayList<ListViewItem>();
         listView = (ListView) findViewById(R.id.list_view);
 
