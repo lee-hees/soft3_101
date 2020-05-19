@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-     <string name="second_1">양산역</string>
-     <string name="second_2">남양산역</string>
-     <string name="second_3">부산대양산캠퍼스역</string>
-     <string name="second_4">중산역</string>
-     <string name="second_5">호포역</string>
-     <string name="second_6">금곡역</string>
-     <string name="second_7">동원역</string>
-     <string name="second_8">율리역</string>
-     <string name="second_9">화명역</string>
+
+    <string name="second_1">양산역</string>
+    <string name="second_2">남양산역</string>
+    <string name="second_3">부산대양산캠퍼스역</string>
+    <string name="second_4">중산역</string>
+    <string name="second_5">호포역</string>
+    <string name="second_6">금곡역</string>
+    <string name="second_7">동원역</string>
+    <string name="second_8">율리역</string>
+    <string name="second_9">화명역</string>
     <string name="second_10">수정역</string>
     <string name="second_11">덕천역</string>
     <string name="second_12">구명역</string>
@@ -42,6 +43,5 @@
     <string name="second_40">해운대역</string>
     <string name="second_41">중동역</string>
     <string name="second_42">장산역</string>
-
 
 </resources>

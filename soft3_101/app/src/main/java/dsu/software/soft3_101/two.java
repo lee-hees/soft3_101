@@ -1,5 +1,6 @@
-package dsu.software.subwaybusan;
+package dsu.software.soft3_101;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,10 +10,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+@SuppressLint("Registered")
 public class two extends AppCompatActivity {
     ListView listView;
     List<String> mList;
@@ -24,9 +25,9 @@ public class two extends AppCompatActivity {
         setContentView(R.layout.two);
 
 
-        listView = (ListView)findViewById(R.id.list_view);
+        listView = (ListView) findViewById(R.id.list_view);
 
-        String strs[] = {
+        String[] strs = {
 
                 getString(R.string.second_1),
                 getString(R.string.second_2),
@@ -73,7 +74,7 @@ public class two extends AppCompatActivity {
 
         };
 
-                mList = Arrays.asList(strs);
+        mList = Arrays.asList(strs);
 
         listView.setAdapter(new two.MyCustomAdapter());
 
@@ -81,20 +82,18 @@ public class two extends AppCompatActivity {
 
 
     /*** Custom Adapter ***/
-    private class MyCustomAdapter extends ArrayAdapter<String>
-    {
+    private class MyCustomAdapter extends ArrayAdapter<String> {
 
-        public MyCustomAdapter()
-        {
-            super(two.this,R.layout.item_layout,mList);
+        public MyCustomAdapter() {
+            super(two.this, R.layout.item_layout, mList);
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent)
-        {
-            if(convertView==null) convertView = getLayoutInflater().inflate(R.layout.item_layout,parent,false);
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
 
-            TextView textViewAtCustomLayout = (TextView)convertView.findViewById(R.id.text_view_at_custom_layout);
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
             textViewAtCustomLayout.setText(mList.get(position));
 
             return convertView;

@@ -1,4 +1,4 @@
-package dsu.software.subwaybusan;
+package dsu.software.soft3_101;
 
 import android.os.Bundle;
 import android.view.View;
@@ -24,31 +24,29 @@ public class item extends AppCompatActivity {
         setContentView(R.layout.five);
 
 
-        listView = (ListView)findViewById(R.id.list_view);
-        String strs[] = {"미남역","동래역", "수안역","낙민역","충렬사역","명장역","서동역","금사역","반여농산물시장역","석대역","영산대역","동부산대학역","고촌역","안평역"};
+        listView = (ListView) findViewById(R.id.list_view);
+        String[] strs = {"미남역", "동래역", "수안역", "낙민역", "충렬사역", "명장역", "서동역", "금사역", "반여농산물시장역", "석대역", "영산대역", "동부산대학역", "고촌역", "안평역"};
 
         mList = Arrays.asList(strs);
 
         listView.setAdapter(new MyCustomAdapter());
 
-        }
+    }
 
 
     /*** Custom Adapter ***/
-    private class MyCustomAdapter extends ArrayAdapter<String>
-    {
+    private class MyCustomAdapter extends ArrayAdapter<String> {
 
-        public MyCustomAdapter()
-        {
-            super(item.this,R.layout.item_layout,mList);
+        public MyCustomAdapter() {
+            super(item.this, R.layout.item_layout, mList);
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent)
-        {
-            if(convertView==null) convertView = getLayoutInflater().inflate(R.layout.item_layout,parent,false);
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
 
-            TextView textViewAtCustomLayout = (TextView)convertView.findViewById(R.id.text_view_at_custom_layout);
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
             textViewAtCustomLayout.setText(mList.get(position));
 
             return convertView;

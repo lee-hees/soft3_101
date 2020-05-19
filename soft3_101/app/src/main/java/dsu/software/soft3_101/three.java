@@ -1,4 +1,4 @@
-package dsu.software.subwaybusan;
+package dsu.software.soft3_101;
 
 import android.os.Bundle;
 import android.view.View;
@@ -24,9 +24,9 @@ public class three extends AppCompatActivity {
         setContentView(R.layout.three);
 
 
-        listView = (ListView)findViewById(R.id.list_view);
+        listView = (ListView) findViewById(R.id.list_view);
 
-        String strs[] = {
+        String[] strs = {
 
                 getString(R.string.third_1),
                 getString(R.string.third_2),
@@ -57,20 +57,18 @@ public class three extends AppCompatActivity {
 
 
     /*** Custom Adapter ***/
-    private class MyCustomAdapter extends ArrayAdapter<String>
-    {
+    private class MyCustomAdapter extends ArrayAdapter<String> {
 
-        public MyCustomAdapter()
-        {
-            super(three.this,R.layout.item_layout,mList);
+        public MyCustomAdapter() {
+            super(three.this, R.layout.item_layout, mList);
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent)
-        {
-            if(convertView==null) convertView = getLayoutInflater().inflate(R.layout.item_layout,parent,false);
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
 
-            TextView textViewAtCustomLayout = (TextView)convertView.findViewById(R.id.text_view_at_custom_layout);
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
             textViewAtCustomLayout.setText(mList.get(position));
 
             return convertView;

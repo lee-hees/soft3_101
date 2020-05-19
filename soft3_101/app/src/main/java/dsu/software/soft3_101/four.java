@@ -1,3 +1,5 @@
+package dsu.software.soft3_101;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,12 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import dsu.software.subwaybusan.R;
-import dsu.software.subwaybusan.three;
 
 public class four extends AppCompatActivity {
     ListView listView;
@@ -25,9 +23,9 @@ public class four extends AppCompatActivity {
         setContentView(R.layout.four);
 
 
-        listView = (ListView)findViewById(R.id.list_view);
+        listView = (ListView) findViewById(R.id.list_view);
 
-        String strs[] = {
+        String[] strs = {
 
                 getString(R.string.fourth_1),
                 getString(R.string.fourth_2),
@@ -53,20 +51,18 @@ public class four extends AppCompatActivity {
 
 
     /*** Custom Adapter ***/
-    private class MyCustomAdapter extends ArrayAdapter<String>
-    {
+    private class MyCustomAdapter extends ArrayAdapter<String> {
 
-        public MyCustomAdapter()
-        {
-            super(four.this,R.layout.item_layout,mList);
+        public MyCustomAdapter() {
+            super(four.this, R.layout.item_layout, mList);
         }
 
         @Override
-        public View getView(int position, View convertView, ViewGroup parent)
-        {
-            if(convertView==null) convertView = getLayoutInflater().inflate(R.layout.item_layout,parent,false);
+        public View getView(int position, View convertView, ViewGroup parent) {
+            if (convertView == null)
+                convertView = getLayoutInflater().inflate(R.layout.item_layout, parent, false);
 
-            TextView textViewAtCustomLayout = (TextView)convertView.findViewById(R.id.text_view_at_custom_layout);
+            TextView textViewAtCustomLayout = (TextView) convertView.findViewById(R.id.text_view_at_custom_layout);
             textViewAtCustomLayout.setText(mList.get(position));
 
             return convertView;
