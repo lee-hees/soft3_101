@@ -1,6 +1,7 @@
 package dsu.software.soft3_101;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -19,6 +20,15 @@ public class detail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_layout);
         final Stations string = new Stations();
+       
+        TextView home = findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent home = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(home);
+            }
+        });
 
         final TextView station = findViewById(R.id.station);
         station.setText(MainActivity.name);
