@@ -96,7 +96,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_weight="1"
-                    android:text="오른쪽"
+                    android:text="왼쪽"
                     android:textSize="40sp" />
 
                 <TextView
@@ -105,7 +105,7 @@
                     android:gravity="center"
                     android:layout_weight="1"
                     android:visibility="gone"
-                    android:text="오른쪽"
+                    android:text="왼쪽"
                     android:textSize="40sp" />
 
 
@@ -150,8 +150,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="안녕하세요"
-                android:textSize="40sp"
+                android:text="1호차"
                 />
 
             <TextView
@@ -159,17 +158,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="안녕하세요"
-                android:textSize="40sp"
-                />
+                android:text="2호차" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="안녕하세요"
-                android:textSize="40sp"
+                android:text="3호차"
                 />
 
         </LinearLayout>
