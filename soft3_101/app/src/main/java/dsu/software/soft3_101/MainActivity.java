@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent home = new Intent(getApplicationContext(),MainActivity.class);
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(home);
             }
         });
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         list_itemArrayList.add(new ListViewItem(getString(R.string.third)));
         list_itemArrayList.add(new ListViewItem(getString(R.string.fourth)));
         list_itemArrayList.add(new ListViewItem(getString(R.string.dong)));
+        list_itemArrayList.add(new ListViewItem(getString(R.string.kim)));
 
         myListAdapter = new ListviewAdapter(MainActivity.this, list_itemArrayList);
         listView.setAdapter(myListAdapter);
@@ -50,25 +51,24 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (list_itemArrayList.get(position).getContent().equals(getString(R.string.first))){
+                if (list_itemArrayList.get(position).getContent().equals(getString(R.string.first))) {
                     Intent tofirst = new Intent(getApplicationContext(), first.class);
                     startActivity(tofirst);
-                }
-                else if(list_itemArrayList.get(position).getContent().equals(getString(R.string.second))){
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.second))) {
                     Intent tosecond = new Intent(getApplicationContext(), second.class);
                     startActivity(tosecond);
-                }
-                else if(list_itemArrayList.get(position).getContent().equals(getString(R.string.third))){
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.third))) {
                     Intent tothird = new Intent(getApplicationContext(), third.class);
                     startActivity(tothird);
-                }
-                else if(list_itemArrayList.get(position).getContent().equals(getString(R.string.fourth))){
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.fourth))) {
                     Intent tofourth = new Intent(getApplicationContext(), fourth.class);
                     startActivity(tofourth);
-                }
-                else if(list_itemArrayList.get(position).getContent().equals(getString(R.string.dong))){
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.dong))) {
                     Intent todong = new Intent(getApplicationContext(), dong.class);
                     startActivity(todong);
+//                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.kim))) {
+//                    Intent todong = new Intent(getApplicationContext(), dong.class);
+//                    startActivity(todong);
                 }
             }
         });

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="third_1">대저역</string>
-    <string name="third_2">체육공원역</string>
-    <string name="third_3">강서구</string>
-    <string name="third_4">구포역</string>
-    <string name="third_5">덕천역</string>
-    <string name="third_6">숙등역</string>
-    <string name="third_7">남산정</string>
-    <string name="third_8">만덕역</string>
-    <string name="third_9">미남역</string>
-    <string name="third_10">사직역</string>
-    <string name="third_11">종합운</string>
-    <string name="third_12">거제역</string>
-    <string name="third_13">연산역</string>
-    <string name="third_14">물만골역</string>
-    <string name="third_15">배산역</string>
-    <string name="third_16">망미역</string>
-    <string name="third_17">수영역</string>
+    <string name="third_1">수영</string>
+    <string name="third_2">망미</string>
+    <string name="third_3">배산</string>
+    <string name="third_4">물만골</string>
+    <string name="third_5">연산</string>
+    <string name="third_6">거제</string>
+    <string name="third_7">종합운</string>
+    <string name="third_8">사직</string>
+    <string name="third_9">미남</string>
+    <string name="third_10">만덕</string>
+    <string name="third_11">남산정</string>
+    <string name="third_12">숙등</string>
+    <string name="third_13">덕천</string>
+    <string name="third_14">구포</string>
+    <string name="third_15">강서구</string>
+    <string name="third_16">체육공원</string>
+    <string name="third_17">대저</string>
 
 </resources>
