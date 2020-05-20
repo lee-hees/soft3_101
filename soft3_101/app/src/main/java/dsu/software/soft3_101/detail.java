@@ -200,7 +200,9 @@ public class detail extends AppCompatActivity {
         // 3호선
         else if (whichstation == 2) {
             lt_basic.setVisibility(View.VISIBLE);
+            lt_basic.setText("수영행");
             gt_basic.setVisibility(View.VISIBLE);
+            gt_basic.setText("대저행");
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -259,7 +261,9 @@ public class detail extends AppCompatActivity {
         // 4호선
         else if (whichstation == 3) {
             lt_basic.setVisibility(View.VISIBLE);
+            lt_basic.setText("미남행");
             gt_basic.setVisibility(View.VISIBLE);
+            gt_basic.setText("안평행");
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -333,7 +337,7 @@ public class detail extends AppCompatActivity {
             lt_basic.setVisibility(View.VISIBLE);
             lt_basic.setText("사상행");
             gt_basic.setVisibility(View.VISIBLE);
-            gt_another.setText("가야대행");
+            gt_basic.setText("가야대행");
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);

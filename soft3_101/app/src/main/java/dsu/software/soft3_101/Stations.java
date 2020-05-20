@@ -60,12 +60,12 @@ public class Stations extends AppCompatActivity {
                     },
 
                     {
-                            R.string.kimhe_1, R.string.kimhe_2, R.string.kimhe_3, R.string.kimhe_4,
-                            R.string.kimhe_5, R.string.kimhe_6, R.string.kimhe_7, R.string.kimhe_8,
-                            R.string.kimhe_9, R.string.kimhe_10, R.string.kimhe_11, R.string.kimhe_12,
-                            R.string.kimhe_13, R.string.kimhe_14, R.string.kimhe_15,R.string.kimhe_16,
-                            R.string.kimhe_17, R.string.kimhe_18, R.string.kimhe_19, R.string.kimhe_20,
-                            R.string.kimhe_21
+                            R.string.kim_1, R.string.kim_2, R.string.kim_3, R.string.kim_4,
+                            R.string.kim_5, R.string.kim_6, R.string.kim_7, R.string.kim_8,
+                            R.string.kim_9, R.string.kim_10, R.string.kim_11, R.string.kim_12,
+                            R.string.kim_13, R.string.kim_14, R.string.kim_15,R.string.kim_16,
+                            R.string.kim_17, R.string.kim_18, R.string.kim_19, R.string.kim_20,
+                            R.string.kim_21
                     }
 
             };

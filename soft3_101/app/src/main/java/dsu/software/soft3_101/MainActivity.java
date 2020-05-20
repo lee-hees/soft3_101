@@ -67,14 +67,9 @@ public class MainActivity extends AppCompatActivity {
                 } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.dong))) {
                     Intent todong = new Intent(getApplicationContext(), dong.class);
                     startActivity(todong);
-//                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.kim))) {
-//                    Intent todong = new Intent(getApplicationContext(), dong.class);
-//                    startActivity(todong);
-                }
-
-                else if(list_itemArrayList.get(position).getContent().equals(getString(R.string.kimhe))){
-                    Intent tokimhe = new Intent(getApplicationContext(), kimhe.class);
-                    startActivity(tokimhe);
+                } else if (list_itemArrayList.get(position).getContent().equals(getString(R.string.kim))) {
+                    Intent tokim = new Intent(getApplicationContext(), kim.class);
+                    startActivity(tokim);
                 }
             }
         });

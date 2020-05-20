@@ -87,14 +87,14 @@
             <TableRow android:id="@+id/basic">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/lt_basic"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="기본"
                         android:textSize="20sp" />
@@ -102,14 +102,14 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/gt_basic"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="기본"
                         android:textSize="20sp" />
@@ -122,15 +122,14 @@
             <TableRow android:id="@+id/another">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
-
 
                     <TextView
                         android:id="@+id/lt_another"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="환승"
                         android:textSize="20sp" />
@@ -138,7 +137,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0sp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1">
 
@@ -146,7 +145,7 @@
                     <TextView
                         android:id="@+id/gt_another"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:gravity="center"
                         android:text="환승"
                         android:textSize="20sp" />
@@ -161,7 +160,7 @@
                 <TextView
                     android:id="@+id/lt_blank"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textSize="20sp" />
@@ -169,7 +168,7 @@
                 <TextView
                     android:id="@+id/gt_blank"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:textSize="20sp" />
