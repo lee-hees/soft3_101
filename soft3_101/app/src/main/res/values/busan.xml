@@ -6,5 +6,7 @@
     <string name="third">3호선</string>
     <string name="fourth">4호선</string>
     <string name="dong">동해선</string>
+    <string name="kimhe">김해선</string>
+
 
 </resources>

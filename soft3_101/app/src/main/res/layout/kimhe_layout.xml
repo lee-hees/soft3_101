@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".first">
+    tools:context=".kimhe">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitStart" />
 
         <TextView
             android:id="@+id/home"
@@ -41,4 +41,5 @@
         android:layout_height="wrap_content">
 
     </ListView>
+
 </LinearLayout>
