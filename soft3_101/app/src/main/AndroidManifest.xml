@@ -14,6 +14,7 @@
         <activity android:name=".third"/>
         <activity android:name=".fourth"/>
         <activity android:name=".dong"/>
+        <activity android:name=".kimhe"/>
         <activity android:name=".detail"/>
         <activity android:name=".MainActivity" android:launchMode="singleInstance">
             <intent-filter >
