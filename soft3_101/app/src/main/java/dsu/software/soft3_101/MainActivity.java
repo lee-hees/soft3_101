@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent home = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(home);
+                finish();
             }
         });
 

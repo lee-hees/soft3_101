@@ -33,6 +33,7 @@ public class detail extends AppCompatActivity {
             public void onClick(View view) {
                 Intent home = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(home);
+//                finish();
             }
         });
 
@@ -147,8 +148,10 @@ public class detail extends AppCompatActivity {
         else if (whichstation == 1) {
             lt_basic.setVisibility(View.VISIBLE);
             lt_basic.setText("장산행");
+            lt_basic.setTextColor(Color.parseColor(getString(R.string.second_color)));
             gt_basic.setVisibility(View.VISIBLE);
             gt_basic.setText("양산행");
+            gt_basic.setTextColor(Color.parseColor(getString(R.string.second_color)));
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -159,17 +162,19 @@ public class detail extends AppCompatActivity {
             } else if (num == 4) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("부전행");
-                lt_another.setTextColor(Color.parseColor(getString(R.string.first_color)));
+                lt_another.setTextColor(Color.parseColor(getString(R.string.dong_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("일광행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.dong_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 7) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("수영행");
-                lt_another.setTextColor(Color.parseColor(getString(R.string.first_color)));
+                lt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("대저행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 18) {
@@ -184,12 +189,16 @@ public class detail extends AppCompatActivity {
             } else if (num == 26) {
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("가야대행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.kim_color)));
+                lt_blank.setVisibility(View.GONE);
+                gt_blank.setVisibility(View.GONE);
             } else if (num == 32) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("수영행");
-                lt_another.setTextColor(Color.parseColor(getString(R.string.first_color)));
+                lt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("대저행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == string.FS[whichstation].length - 1) {
@@ -201,8 +210,10 @@ public class detail extends AppCompatActivity {
         else if (whichstation == 2) {
             lt_basic.setVisibility(View.VISIBLE);
             lt_basic.setText("수영행");
+            lt_basic.setTextColor(Color.parseColor(getString(R.string.third_color)));
             gt_basic.setVisibility(View.VISIBLE);
             gt_basic.setText("대저행");
+            gt_basic.setTextColor(Color.parseColor(getString(R.string.third_color)));
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -210,32 +221,36 @@ public class detail extends AppCompatActivity {
             if (num == 0) {
                 lt_basic.setVisibility(View.INVISIBLE);
                 lt_another.setVisibility(View.VISIBLE);
-                lt_another.setText("사상행");
-                lt_another.setTextColor(Color.parseColor(getString(R.string.first_color)));
+                lt_another.setText("가야대행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.kim_color)));
                 gt_another.setVisibility(View.VISIBLE);
-                gt_another.setText("가야대행");
+                gt_another.setText("사상행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.kim_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
                 pre.setVisibility(View.INVISIBLE);
             } else if (num == 4) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("장산행");
-                lt_another.setTextColor(Color.parseColor(getString(R.string.first_color)));
+                lt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("양산행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 5) {
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("안평행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.fourth_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 8) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("부전행");
-                lt_another.setTextColor(Color.parseColor(getString(R.string.first_color)));
+                lt_another.setTextColor(Color.parseColor(getString(R.string.dong_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("일광행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.dong_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 12) {
@@ -250,8 +265,10 @@ public class detail extends AppCompatActivity {
             } else if (num == string.FS[whichstation].length - 1) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("장산행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("양산행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 gt_basic.setVisibility(View.INVISIBLE);
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
@@ -262,8 +279,10 @@ public class detail extends AppCompatActivity {
         else if (whichstation == 3) {
             lt_basic.setVisibility(View.VISIBLE);
             lt_basic.setText("미남행");
+            lt_basic.setTextColor(Color.parseColor(getString(R.string.fourth_color)));
             gt_basic.setVisibility(View.VISIBLE);
             gt_basic.setText("안평행");
+            gt_basic.setTextColor(Color.parseColor(getString(R.string.fourth_color)));
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -272,8 +291,10 @@ public class detail extends AppCompatActivity {
                 lt_basic.setVisibility(View.INVISIBLE);
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("수영행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("대저행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
                 pre.setVisibility(View.INVISIBLE);
@@ -295,8 +316,10 @@ public class detail extends AppCompatActivity {
         else if (whichstation == 4) {
             lt_basic.setVisibility(View.VISIBLE);
             lt_basic.setText("부전행");
+            lt_basic.setTextColor(Color.parseColor(getString(R.string.dong_color)));
             gt_basic.setVisibility(View.VISIBLE);
             gt_basic.setText("일광행");
+            gt_basic.setTextColor(Color.parseColor(getString(R.string.dong_color)));
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -307,8 +330,10 @@ public class detail extends AppCompatActivity {
             } else if (num == 2) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("수영행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("대저행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 3) {
@@ -323,8 +348,10 @@ public class detail extends AppCompatActivity {
             } else if (num == 9) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("장산행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("양산행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == string.FS[whichstation].length - 1) {
@@ -335,9 +362,11 @@ public class detail extends AppCompatActivity {
         // 부산김해
         else if (whichstation == 5) {
             lt_basic.setVisibility(View.VISIBLE);
-            lt_basic.setText("사상행");
+            lt_basic.setText("가야대행");
+            lt_basic.setTextColor(Color.parseColor(getString(R.string.kim_color)));
             gt_basic.setVisibility(View.VISIBLE);
-            gt_basic.setText("가야대행");
+            gt_basic.setText("사상행");
+            gt_basic.setTextColor(Color.parseColor(getString(R.string.kim_color)));
             lt_blank.setVisibility(View.VISIBLE);
             gt_blank.setVisibility(View.VISIBLE);
             pre.setVisibility(View.VISIBLE);
@@ -346,13 +375,16 @@ public class detail extends AppCompatActivity {
                 lt_basic.setVisibility(View.INVISIBLE);
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("장산행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 gt_another.setVisibility(View.VISIBLE);
                 gt_another.setText("양산행");
+                gt_another.setTextColor(Color.parseColor(getString(R.string.second_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == 6) {
                 lt_another.setVisibility(View.VISIBLE);
                 lt_another.setText("수영행");
+                lt_another.setTextColor(Color.parseColor(getString(R.string.third_color)));
                 lt_blank.setVisibility(View.GONE);
                 gt_blank.setVisibility(View.GONE);
             } else if (num == string.FS[whichstation].length - 1) {
