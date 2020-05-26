@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="kim_1">사상</string>
+    <string name="kim_2">괘법르네시떼</string>
+    <string name="kim_3">서부산유통지구</string>
+    <string name="kim_4">공항</string>
+    <string name="kim_5">덕두</string>
+    <string name="kim_6">등구</string>
+    <string name="kim_7">대저</string>
+    <string name="kim_8">평강</string>
+    <string name="kim_9">대사</string>
+    <string name="kim_10">불암</string>
+    <string name="kim_11">지내</string>
+    <string name="kim_12">김해대학</string>
+    <string name="kim_13">인제대</string>
+    <string name="kim_14">김해시청</string>
+    <string name="kim_15">부원</string>
+    <string name="kim_16">봉황</string>
+    <string name="kim_17">수로왕릉</string>
+    <string name="kim_18">박물관</string>
+    <string name="kim_19">연지공원</string>
+    <string name="kim_20">장신대</string>
+    <string name="kim_21">가야대</string>
+
+</resources>
