@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dong_1">부전(동해선)</string>
+    <string name="dong_2">거제해맞이</string>
+    <string name="dong_3">거제</string>
+    <string name="dong_4">교대</string>
+    <string name="dong_5">동래(동해선)</string>
+    <string name="dong_6">안락</string>
+    <string name="dong_7">부산원동</string>
+    <string name="dong_8">재송</string>
+    <string name="dong_9">센텀</string>
+    <string name="dong_10">벡스코</string>
+    <string name="dong_11">신해운대</string>
+    <string name="dong_12">송정</string>
+    <string name="dong_13">오시리아</string>
+    <string name="dong_14">기장</string>
+    <string name="dong_15">일광</string>
+
+</resources>

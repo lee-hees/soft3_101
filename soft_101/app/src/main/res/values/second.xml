@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="second_1">장산</string>
+    <string name="second_2">중동</string>
+    <string name="second_3">해운대</string>
+    <string name="second_4">동백</string>
+    <string name="second_5">벡스코</string>
+    <string name="second_6">센텀시티</string>
+    <string name="second_7">민락</string>
+    <string name="second_8">수영</string>
+    <string name="second_9">광안</string>
+    <string name="second_10">금련산</string>
+    <string name="second_11">남천</string>
+    <string name="second_12">경성대.부경대</string>
+    <string name="second_13">대연</string>
+    <string name="second_14">못골</string>
+    <string name="second_15">지게골</string>
+    <string name="second_16">문현</string>
+    <string name="second_17">국제금융센터.부산은행</string>
+    <string name="second_18">전포</string>
+    <string name="second_19">서면</string>
+    <string name="second_20">부암</string>
+    <string name="second_21">가야</string>
+    <string name="second_22">동의대</string>
+    <string name="second_23">개금</string>
+    <string name="second_24">냉정</string>
+    <string name="second_25">주례</string>
+    <string name="second_26">감전</string>
+    <string name="second_27">사상</string>
+    <string name="second_28">덕포</string>
+    <string name="second_29">모덕</string>
+    <string name="second_30">모라</string>
+    <string name="second_31">구남</string>
+    <string name="second_32">구명</string>
+    <string name="second_33">덕천</string>
+    <string name="second_34">수정</string>
+    <string name="second_35">화명</string>
+    <string name="second_36">율리</string>
+    <string name="second_37">동원</string>
+    <string name="second_38">금곡</string>
+    <string name="second_39">호포</string>
+    <string name="second_40">증산</string>
+    <string name="second_41">부산대양산캠퍼스</string>
+    <string name="second_42">남양산</string>
+    <string name="second_43">양산</string>
+
+</resources>
